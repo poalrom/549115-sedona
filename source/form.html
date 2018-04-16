@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма отзыва</title>
+</head>
+<body>
+  <section class="header">
+    <a class="header__logo logo-image" href="#">
+      <img src="#" alt="Sedona">
+    </a>
+    <nav class="nav">
+      <button class="nav--open" type="button">Открыть меню</button>
+      <button class="nav--close" type="button">Закрыть меню</button>
+      <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Форма отзыва</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <main>
+    <section class="description">
+      <p class="description__title">Оставьте свой отзыв</p>
+      <p class="description__motive">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+    <section class="form">
+      <form class="get-name" action="#">
+        <h2 class="description__title">Представьтесь:</h2>
+        <label for="name">Имя<sup>*</sup>:</label>
+        <input class="get-name__name" type="text" id="name" placeholder="Пётр" pattern="^[а-яА-ЯёЁa-zA-Z]+$\">
+        <label for="surname">Фамилия<sup>*</sup>:</label>
+        <input class="get-name__sename" type="text" id="surname"  pattern="^[а-яА-ЯёЁa-zA-Z]+$\">
+        <label for="patronymiс">Отчество:</label>
+        <input class="get-name__patronymiс" type="text" id="patronymiс"  placeholder="Александорович" pattern="^[а-яА-ЯёЁa-zA-Z]+$\">
+      </form>
+      <form class="get-contact" action="#">
+        <h2 class="description__title">Контактная информация:</h2>
+        <label for="phone">Контактный телефон<sup>*</sup>:</label>
+        <input class="get-contact__phone" type="tel" id="phone" placeholder="Введите телефон" pattern="8|\+7?\d+">
+        <label for="email">Электронная почта<sup>*</sup>:</label>
+        <input class="get-contact__email" type="email" id="email" placeholder="Введите email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,6}$">
+      </form>
+      <form class="get-impression" action="#">
+        <h2 class="description__title">Ваше общее впечатление:</h2>
+        <label for="good">Скорее положительные</label>
+        <input class="get-impression__good" type="checkbox" id="good" checked>
+        <label for="bad">Скорее отрицательные</label>
+        <input class="get-impression__bad" type="checkbox" id="bad">
+        <label for="neutral">Затрудняюсь ответить</label>
+        <input class="get-impressionl__neutral" type="checkbox" id="neutral">
+      </form>
+      <form class="get-visit" action="#">
+        <h2 class="description__title">Посещенные достопримечательности:</h2>
+        <label for="devil-bridge">Мост Дьявола</label>
+        <input class="get-visit__devil-bridge" type="checkbox" id="devil-bridge" checked>
+        <label for="mountain-bell">Гора-Колокол</label>
+        <input class="get-visit__mountain-bell" type="checkbox" id="mountain-bell">
+        <label for="slide-park">Слайд-парк</label>
+        <input class="get-visit__slide-park" type="checkbox" id="slide-park">
+        <label for="red-rock">Красные скалы</label>
+        <input class="get-visit__neutral" type="checkbox" id="red-rock">
+      </form>
+      <form class="get-comment" action="#">
+        <h2 class="description__title">Опишите свои эмоции:</h2>
+        <input class="get-comment__comment" type="textarea" placeholder="Опишите подробно все свои восторги">
+      </form>
+      <button class="button" type="button" value="Отправить отзыв"></button>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="social">
+      <h3 class="social__hashtag">#visitsedona</h3>
+      <ul class="social-list">
+        <li class="social-list__twitter" >
+          <a href="#">twitter</a>
+        </li>
+        <li class="social-list__fb" >
+          <a href="#">facebook</a>
+        </li>
+        <li class="social-list__youtube" >
+          <a href="#">youtube</a>
+        </li>
+      </ul>
+      <p class="author">Разработано</p>
+    </div>
+  </footer>
+</body>
+</html>
