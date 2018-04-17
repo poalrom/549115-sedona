@@ -7,7 +7,7 @@
 <body>
     <section class="header">
         <nav class="nav">
-          <button class="nav--close" type="button">Закрыть меню</button>
+          <button class="nav__close" type="button">Закрыть меню</button>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#">Главная</a>
@@ -25,17 +25,17 @@
           <a class="header__logo logo-image" href="#">
             <img src="#" alt="Sedona">
           </a>
-          <button class="nav--open" type="button">Открыть меню</button>
+          <button class="nav__open" type="button">Открыть меню</button>
         </nav>
       </section>
   <main>
     <section class="description">
       <p class="description__title">Оставьте свой отзыв</p>
-      <p class="description__motive">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="description__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
     <section class="form">
       <form class="get-feedback" action="https://echo.htmlacademy.ru">
-        <h2 class="description__title form__border-top">Представьтесь:</h2>
+        <h2 class="form__title form__border-top">Представьтесь:</h2>
         <label class="form__label" for="name">Имя<sup>*</sup>:</label>
           <input class="form__input" name="get-name" type="text" id="name" placeholder="Пётр">
         <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
@@ -43,13 +43,13 @@
         <label class="form__label" for="patronymiс">Отчество:</label>
           <input class="form__input" name="get-patronymiс" type="text" id="patronymiс"  placeholder="Александорович">
 
-        <h2 class="description__title form__border-top">Контактная информация:</h2>
+        <h2 class="form__title form__border-top">Контактная информация:</h2>
         <label class="form__label" for="phone">Контактный телефон<sup>*</sup>:</label>
           <input class="form__input" name="get-phone" type="tel" id="phone" placeholder="Введите телефон" pattern="8|\+7?\d+">
         <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
           <input class="form__input" name="get-email" type="email" id="email" placeholder="Введите email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,6}$">
 
-        <h2 class="description__title form__border-top">Ваше общее впечатление:</h2>
+        <h2 class="form__title form__border-top">Ваше общее впечатление:</h2>
         <label class="form__label" for="good">Скорее положительное</label>
           <input class="form__radio" name="get-impression-good" type="radio" id="good" checked>
         <label class="form__" for="bad">Скорее отрицательное</label>
@@ -57,7 +57,7 @@
         <label class="form__label" name="get-impression-neutral" for="neutral">Затрудняюсь ответить</label>
           <input class="form__radio" type="radio" id="neutral">
 
-        <h2 class="description__title form__border-top">Посещенные достопримечательности:</h2>
+        <h2 class="form__title form__border-top">Посещенные достопримечательности:</h2>
         <label class="form__label" for="devil-bridge">Мост Дьявола</label>
           <input class="form__checkbox" name="get-visit-devil-bridge" type="checkbox" id="devil-bridge" checked>
         <label class="form__label" for="mountain-bell">Гора-Колокол</label>
@@ -67,8 +67,8 @@
         <label class="form__label" for="red-rock">Красные скалы</label>
           <input class="form__checkbox" name="get-visit-red-rock" type="checkbox" id="red-rock">
 
-        <h2 class="description__title form__border-top">Опишите свои эмоции:</h2>
-        <input class="get-comment__comment" type="textarea" placeholder="Опишите подробно все свои восторги">
+        <h2 class="form__title form__border-top">Опишите свои эмоции:</h2>
+        <input class="form__input form__input--comment" type="textarea" name="get-comment" placeholder="Опишите подробно все свои восторги">
       </form>
       <button class="button" type="submit">Отправить отзыв</button>
     </section>
