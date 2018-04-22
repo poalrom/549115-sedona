@@ -1,0 +1,68 @@
+.form {
+  padding: 20px;
+  text-align: left;
+}
+
+.form__title {
+  @include font-title;
+  text-align: center;
+}
+
+.form__border-top {
+
+}
+
+.form__label {
+  display: inline-block;
+  display: block;
+  @include font-input;
+  &--thin {
+    @include font-main;
+  }
+}
+
+.form__input {
+  box-sizing: border-box;
+  margin: 10px 0;
+  height: 59px;
+  background: $input-color;
+  border: none;
+  padding: 15px;
+  @include font-input;
+
+  &--s {
+    min-width: 190px;
+  }
+
+  &--m {
+    min-width: 229px;
+  }
+
+  // &--radio {
+  //   width: 59px;
+  // }
+
+  // &--checkbox {
+  //   display: block;
+  //   width: 59px;
+  //   border: none;
+  // }
+
+  &--comment {
+    width: 90%;
+    height: 159px;
+
+  }
+}
+
+.form__radio {
+  height: 59px;
+  width: 59px;
+}
+
+.form__checkbox {
+
+  height: 59px;
+  width: 59px;
+  border: none;
+}
