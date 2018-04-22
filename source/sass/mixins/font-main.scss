@@ -1,0 +1,9 @@
+@mixin font-main {
+  //font: normal uppercase 14px/21px "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: black;
+}

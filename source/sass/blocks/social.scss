@@ -1,0 +1,31 @@
+.social {
+
+}
+
+.social__hashtag {
+
+}
+
+.social-list {
+  @include list-style-none;
+}
+
+.social-list__item {
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  background: $main-color;
+  font-size: 0;
+}
+
+.social-list__twitter {
+  background: url("../img/icon-facebook.svg") center no-repeat;
+}
+
+.social-list__fb {
+  background: url("../img/icon-twitter.svg") center no-repeat;
+}
+
+.social-list__youtube {
+  background: url("../img/icon-youtube.svg") center no-repeat;
+}

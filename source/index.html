@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <section class="header">
@@ -10,31 +11,31 @@
         <button class="nav__close" type="button">Закрыть меню</button>
         <ul class="nav__list">
           <li class="nav__item nav__active">
-            <a href="#">Главная</a>
+            <a class="nav__link" href="#">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="#">Фото и видео</a>
+            <a class="nav__link" href="#">Фото и видео</a>
           </li>
           <li class="nav__item">
-            <a href="#">Форма отзыва</a>
+            <a class="nav__link" href="#">Форма отзыва</a>
           </li>
           <li class="nav__item">
-            <a href="#">Html Academy</a>
+            <a class="nav__link" href="#">Html Academy</a>
           </li>
         </ul>
-        <a class="header__logo logo-image" href="#">
-          <img src="#" alt="Sedona">
-        </a>
-        <button class="nav__open" type="button">Открыть меню</button>
       </nav>
+      <a class="header__logo logo-image" href="#">
+        <img src="./img/logo-sedona-mobile.svg" alt="Sedona">
+      </a>
+      <button class="nav__open" type="button">Открыть меню</button>
+      <section class="intro">
+          <span class="intro__title">Welcome</span>
+          <span class"intro__subtitle">- to the gorgeon -</span>
+          <h1 class="intro__caption">Sedona</h1>
+          <p class="intro__slogan">"Becouse the Grand Canyon suks!"</p>
+        </section>
     </section>
     <main class="main">
-      <section class="intro">
-        <span class="intro__title">Welcome</span>
-        <span class"intro__subtitle">- to the gorgeon -</span>
-        <h1 class="intro__caption">Sedona</h1>
-        <p class="intro__slogan">"Becouse the Grand Canyon suks!"</p>
-      </section>
       <section class="description">
           <p class="description__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="description__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -44,20 +45,20 @@
           <h2 class="advantage__title">Настоящий городок</h2>
           <p class="advantage__text">№1</p>
           <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img class="advantage__image" src="#" alt="">
         </div>
+        <div class="advantage__bg"></div>
         <ul class="service">
           <li class="service__house">
-            <p class="service__title"></p>
-            <p class="service__text"></p>
+            <p class="service__title">Жилье</p>
+            <p class="service__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="service__souvenir">
-              <p class="service__title"></p>
-              <p class="service__text"></p>
+              <p class="service__title">Сувениры</p>
+              <p class="service__text">Не только китайского, но и местного производства!</p>
           </li>
           <li class="service__food">
-              <p class="service__title"></p>
-              <p class="service__text"></p>
+              <p class="service__title">Еда</p>
+              <p class="service__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
         <div class="advantage">
@@ -86,8 +87,10 @@
         <h2 class="prompt__title">Зинтересовались?</h2>
         <p class="prompt__guide">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button prompt__request" type="button">Найти гостиницу</button>
-        <div class="map"></div>
       </section>
+      <div class="map">
+          <!-- <img class="map map__bg" src="#" alt=""> -->
+        </div>
     </main>
     <footer class="footer">
       <div class="social">

@@ -1,0 +1,43 @@
+@mixin before-icon {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 100px;
+  min-width: 80px;
+  min-height: 80px;
+}
+
+.service {
+  @include list-style-none;
+  text-align: left;
+  padding-left: 260px;
+}
+
+.service__title {
+  @include font-title;
+}
+
+.service__text {
+
+}
+
+.service__house {
+  &::before {
+    @include before-icon;
+    background: url("../img/icon-house.svg") no-repeat;
+  }
+}
+
+.service__souvenir {
+  &::before {
+    @include before-icon;
+    background: url("../img/icon-gift.svg") no-repeat;
+  }
+}
+
+.service__food {
+  &::before {
+    @include before-icon;
+    background: url("../img/icon-burger.svg") no-repeat;
+  }
+}

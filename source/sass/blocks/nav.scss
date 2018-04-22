@@ -1,0 +1,30 @@
+.nav {
+  //display: hidden;
+  background-color: $main-color;
+  @include position-center;
+}
+
+.nav__open {
+
+}
+
+.nav__close {
+
+}
+
+.nav__list {
+  @include list-style-none;
+}
+
+.nav__item {
+
+}
+
+.nav__active {
+
+}
+
+.nav__link {
+  @include font-menu;
+  text-decoration: none;
+}

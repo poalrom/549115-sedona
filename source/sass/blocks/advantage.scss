@@ -1,0 +1,26 @@
+.advantage {
+  background: $main-color;
+  color: #ffffff;
+  padding: 10px 40px;
+}
+
+.advantage__title {
+  @include font-title;
+
+}
+
+.advantage__text {
+
+}
+
+.advantage__bg {
+  min-width: 320px;
+  min-height: 260px;
+  background: url("../img/main-city-mobile@1x.jpg") center/100% no-repeat ;
+  background-clip: border-box;
+}
+
+.advantage--secondary {
+  background:$lightgray;
+  color: black;
+}

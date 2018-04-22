@@ -1,0 +1,12 @@
+.description{
+  @include position-center;
+  padding: 20px 40px;
+}
+
+.description__title {
+  @include font-title;
+}
+
+.description__text {
+
+}
