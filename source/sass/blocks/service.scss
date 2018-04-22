@@ -9,12 +9,19 @@
 
 .service {
   @include list-style-none;
+  position: relative;
   text-align: left;
-  padding-left: 260px;
+  padding-left: 20%;
 }
 
 .service__title {
   @include font-title;
+}
+
+.service__svg {
+  position: absolute;
+  left: 5%;
+
 }
 
 .service__text {
@@ -22,22 +29,13 @@
 }
 
 .service__house {
-  &::before {
-    @include before-icon;
-    background: url("../img/icon-house.svg") no-repeat;
-  }
+
 }
 
 .service__souvenir {
-  &::before {
-    @include before-icon;
-    background: url("../img/icon-gift.svg") no-repeat;
-  }
+
 }
 
 .service__food {
-  &::before {
-    @include before-icon;
-    background: url("../img/icon-burger.svg") no-repeat;
-  }
+
 }

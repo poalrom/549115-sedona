@@ -19,13 +19,18 @@
 }
 
 .social-list__twitter {
-  background: url("../img/icon-facebook.svg") center no-repeat;
+
 }
 
 .social-list__fb {
-  background: url("../img/icon-twitter.svg") center no-repeat;
+  padding-left: 10px;
 }
 
 .social-list__youtube {
-  background: url("../img/icon-youtube.svg") center no-repeat;
+
+}
+
+.social-list__svg {
+  position: relative;
+  top: 12px;
 }

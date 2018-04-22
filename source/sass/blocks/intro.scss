@@ -1,9 +1,13 @@
 .intro {
   min-width: 320px;
-  min-height: 368px;
+  min-height: 320px;
   font-size: 0px;
-  padding: 80px 20px;
-  background: url("../img/text-sedona-index.svg") center no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
+  background: url("../img/text-sedona-index.svg") center/90% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/270% no-repeat;
+
+  &--sub {
+    min-height: 160px;
+    background: url("../img/text-sedona.svg") center/80% no-repeat, url("../img/bg-back-mobile@1x.jpg")center no-repeat;
+  }
 }
 
 .intro__title {
