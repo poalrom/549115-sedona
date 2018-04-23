@@ -1,11 +1,3 @@
-.social {
-
-}
-
-.social__hashtag {
-
-}
-
 .social-list {
   @include list-style-none;
 }
@@ -18,16 +10,8 @@
   font-size: 0;
 }
 
-.social-list__twitter {
-
-}
-
 .social-list__fb {
   padding-left: 10px;
-}
-
-.social-list__youtube {
-
 }
 
 .social-list__svg {

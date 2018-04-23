@@ -8,14 +8,13 @@
   text-align: center;
 }
 
-.form__border-top {
-
-}
+//.form__border-top {}
 
 .form__label {
-  display: inline-block;
   display: block;
+
   @include font-input;
+
   &--thin {
     @include font-main;
   }
@@ -28,6 +27,7 @@
   background: $input-color;
   border: none;
   padding: 15px;
+
   @include font-input;
 
   &--s {
@@ -51,7 +51,6 @@
   &--comment {
     width: 90%;
     height: 159px;
-
   }
 }
 
@@ -61,7 +60,6 @@
 }
 
 .form__checkbox {
-
   height: 59px;
   width: 59px;
   border: none;

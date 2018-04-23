@@ -1,6 +1,5 @@
 @mixin defis {
   content: "-";
-
 }
 
 .advantage {
@@ -11,7 +10,6 @@
 
 .advantage__title {
   @include font-title;
-
 }
 
 .advantage__text {
@@ -20,6 +18,7 @@
       content: "\2014";
       margin: 0 10px;
     }
+
     &::after {
       content: "\2014";
       margin: 0 10px;
@@ -30,17 +29,19 @@
 .advantage__bg {
   min-width: 320px;
   min-height: 260px;
+
   &--1 {
-    background: url("../img/main-city-mobile@1x.jpg") center/100% no-repeat ;
+    background: url("../img/main-city-mobile@1x.jpg") center/100% no-repeat;
     background-clip: border-box;
   }
+
   &--2 {
-    background: url("../img/main-bridge-mobile@1x.jpg") center/100% no-repeat ;
+    background: url("../img/main-bridge-mobile@1x.jpg") center/100% no-repeat;
     background-clip: border-box;
   }
 }
 
 .advantage--secondary {
-  background:$lightgray;
+  background: $lightgray;
   color: black;
 }
