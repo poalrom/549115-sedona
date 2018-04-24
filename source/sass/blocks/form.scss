@@ -4,7 +4,6 @@
 }
 
 .form__title {
-  @include font-title;
   text-align: center;
 }
 
@@ -12,12 +11,6 @@
 
 .form__label {
   display: block;
-
-  @include font-input;
-
-  &--thin {
-    @include font-main;
-  }
 }
 
 .form__input {
@@ -27,8 +20,6 @@
   background: $input-color;
   border: none;
   padding: 15px;
-
-  @include font-input;
 
   &--size-s {
     min-width: 190px;
