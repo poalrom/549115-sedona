@@ -1,8 +1,7 @@
 .nav {
   //display: hidden;
   background-color: $main-color;
-
-  @include position-center;
+  margin: 0 auto;
 }
 
 .nav__list {

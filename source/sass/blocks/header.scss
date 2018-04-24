@@ -1,11 +1,10 @@
 .header {
   min-width: 320px;
   min-height: 280px;
+  margin: 0 auto;
   background-color: #ffffff;
-
-  @include position-center;
 }
 
 .header__logo {
-  @include position-center;
+  margin: 0 auto;
 }
