@@ -1,0 +1,7 @@
+@mixin btn {
+  width: 80%;
+  height: 60px;
+  background: $main-color;
+
+  @include font-title;
+}

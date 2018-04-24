@@ -1,0 +1,11 @@
+.intro {
+  min-width: 320px;
+  min-height: 320px;
+  font-size: 0;
+  background: url("../img/text-sedona-index.svg") center/90% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/270% no-repeat;
+
+  &--sub {
+    min-height: 160px;
+    background: url("../img/text-sedona.svg") center/80% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/200% no-repeat;
+  }
+}

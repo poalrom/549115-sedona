@@ -1,0 +1,13 @@
+.nav {
+  //display: hidden;
+  background-color: $main-color;
+  margin: 0 auto;
+}
+
+.nav__list {
+  @include list-style-none;
+}
+
+.nav__link {
+  text-decoration: none;
+}

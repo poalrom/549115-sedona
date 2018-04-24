@@ -1,0 +1,40 @@
+.advantage {
+  background: $main-color;
+  color: #ffffff;
+  padding: 10px 40px;
+}
+
+.advantage__text {
+  &--num {
+    &::before {
+      content: "\2014";
+      margin: 0 10px;
+    }
+
+    &::after {
+      content: "\2014";
+      margin: 0 10px;
+    }
+  }
+}
+
+.advantage--bg {
+  padding: 0;
+  min-width: 320px;
+  min-height: 260px;
+
+  &-1 {
+    background: url("../img/main-city-mobile@1x.jpg") center/100% no-repeat;
+    background-clip: border-box;
+  }
+
+  &-2 {
+    background: url("../img/main-bridge-mobile@1x.jpg") center/100% no-repeat;
+    background-clip: border-box;
+  }
+}
+
+.advantage--secondary {
+  background: $lightgray;
+  color: black;
+}
