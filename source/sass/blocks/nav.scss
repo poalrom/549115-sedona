@@ -1,13 +1,28 @@
 .nav {
-  //display: hidden;
   background-color: $main-color;
-  margin: 0 auto;
 }
 
 .nav__list {
+  display: flex;
+  flex-direction: column;
   @include list-style-none;
 }
 
 .nav__link {
   text-decoration: none;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    background: #ffffff;
+  }
+
+  .nav__list {
+    flex-direction: row;
+  }
+
+  .nav__link {
+    color: black;
+  }
 }

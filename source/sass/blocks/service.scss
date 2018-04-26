@@ -9,6 +9,7 @@
 
 .service {
   @include list-style-none;
+
   position: relative;
   text-align: left;
   padding-left: 20%;
@@ -17,4 +18,23 @@
 .service__svg {
   position: absolute;
   left: 5%;
+}
+
+@media (min-width: $tablet-width) {
+  .service {
+    display: flex;
+    padding: 0;
+  }
+
+  .service__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 256px;
+    height: 330px;
+  }
+
+  .service__svg {
+    position: relative;
+  }
 }

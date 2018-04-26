@@ -1,4 +1,11 @@
 .description {
-  margin: 0 auto;
-  padding: 20px;
+  min-width: 320px;
+  padding: 10px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    min-width: 702px;
+    padding: 50px 100px;
+  }
 }

@@ -1,0 +1,7 @@
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

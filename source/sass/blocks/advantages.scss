@@ -1,0 +1,11 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -1,4 +1,16 @@
 .button {
-  @include btn;
+  margin: auto;
+  background: $main-color;
   color: #ffffff;
+}
+
+.button {
+  min-width: 240px;
+  height: 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 455px;
+  }
 }
