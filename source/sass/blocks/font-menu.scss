@@ -3,3 +3,9 @@
   font-size: 18px;
   line-height: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .font-menu {
+    font-size: 14px;
+  }
+}

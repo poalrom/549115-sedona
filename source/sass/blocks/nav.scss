@@ -5,7 +5,25 @@
 .nav__list {
   display: flex;
   flex-direction: column;
+  position: relative;
+
   @include list-style-none;
+}
+
+.nav__item {
+  height: $menu-item-height;
+  line-height: $menu-item-height;
+
+  &--bg-logo {
+    background-color: #ffffff;
+  }
+
+  &--logo {
+    width: 101px;
+    position: absolute;
+    bottom: 0;
+    left: 37%;
+  }
 }
 
 .nav__link {
@@ -17,9 +35,21 @@
   .nav {
     background: #ffffff;
   }
-
   .nav__list {
     flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav__item {
+    min-width: 150px;
+
+    &--bg-logo {
+      display: none;
+    }
+
+    &--logo {
+      position: static;
+    }
   }
 
   .nav__link {

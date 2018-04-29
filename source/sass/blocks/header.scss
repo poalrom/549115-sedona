@@ -7,15 +7,28 @@
 }
 
 .header__logo {
-  // position: absolute;
-  // top:
-  margin: 0 auto;
+  margin: auto;
+}
+
+.header__nav-toggle {
+  position: absolute;
+  top: $menu-item-height * 4;
+  right: 0;
+  font-size: 0;
+
+  &--open {
+    vertical-align: middle;
+  }
+
+  &--close {
+    top: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .header {
     min-width: $tablet-width;
-    min-height: 576px;
+    min-height: 348px;
   }
 
   .header__nav-toggle {
