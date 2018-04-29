@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width">
   <title>Фото и видео</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url( "../preview/sedona-photo-mobile.jpg" );
+      }
+      /* Tablet */
+      @media ( min-width: 760px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url( "../preview/sedona-photo-tablet.jpg" );
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 960px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url( "../preview/sedona-photo-desktop.jpg" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
 </head>
 <body>
   <section class="header">
@@ -27,6 +51,7 @@
         <li class="nav__item">
           <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
         </li>
+        <li class="nav__item nav__item--bg-logo"></li>
       </ul>
     </nav>
     <button class="header__nav-toggle" type="button">
@@ -41,13 +66,13 @@
         <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
       </svg>
     </button>
-  </section>
-  <main class="main">
     <section class="intro intro--sub">
       <h1 class="intro__caption">Sedona</h1>
     </section>
+  </section>
+  <main class="main">
     <section class="description">
-      <p class="description__title font-title">Фото и видео</p>
+      <p class="description__title font-title  font-title--big">Фото и видео</p>
       <p class="description__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </section>
     <section class="media">
@@ -61,8 +86,10 @@
           </g>
         </g>
       </svg>
-      <figure class="media__item">
-        <img class="media__photo" src="./img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+      <figure class="media__item media__item--big">
+        <div class="media__photo--wrap media__photo--wrap-big">
+          <img class="media__photo" src="./img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+        </div>
         <p class="media__title font-title">Неродные просторы</p>
         <p class="media__author">Автор фото: Борис</p>
         <svg class="media__like-pic" width="22px" height="22px">
@@ -71,7 +98,9 @@
         <span class="media__like-count">1350</span>
       </figure>
       <figure class="media__item">
-        <img class="media__photo" src="./img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+        <div class="media__photo--wrap">
+          <img class="media__photo" src="./img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+        </div>
         <p class="media__title font-title">Местная растительность</p>
         <p class="media__author">Автор фото: Сергей</p>
         <svg class="media__like-pic" width="22px" height="22px">
@@ -80,7 +109,9 @@
         <span class="media__like-count">143</span>
       </figure>
       <figure class="media__item">
-        <img class="media__photo" src="./img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+        <div class="media__photo--wrap">
+          <img class="media__photo" src="./img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+        </div>
         <p class="media__title font-title">Дорога на север</p>
         <p class="media__author">Автор фото: Пётр</p>
         <svg class="media__like-pic" width="22px" height="22px">
@@ -89,7 +120,9 @@
         <span class="media__like-count">96</span>
       </figure>
       <figure class="media__item">
-        <img class="media__photo" src="./img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+        <div class="media__photo--wrap">
+          <img class="media__photo" src="./img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+        </div>
         <p class="media__title font-title">Мост дьявола</p>
         <p class="media__author">Автор фото: Антон</p>
         <svg class="media__like-pic" width="22px" height="22px">
