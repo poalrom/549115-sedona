@@ -1,6 +1,17 @@
 .get-feedback {
   display: flex;
   flex-direction: column;
+
+  &__feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  &__request {
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -15,7 +26,7 @@
     }
 
     &__name {
-      min-width: 324px;
+      width: 324px;
       flex-grow: 1;
       text-align: right;
     }
@@ -38,6 +49,7 @@
 
     &__feedback {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
     }

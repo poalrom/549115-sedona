@@ -8,6 +8,7 @@
 
   &--sub {
     min-height: 160px;
+    width: 100%;
     margin: auto;
     background: url("../img/text-sedona.svg") center/75% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
   }
@@ -34,8 +35,8 @@
 
     &--sub {
       margin-bottom: 60px;
-      min-height: 293px;
-      background: url("../img/text-sedona.svg") center/60% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
+      min-height: 307px;
+      background: url("../img/text-sedona.svg") center/45% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
     }
   }
 }
