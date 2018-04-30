@@ -1,17 +1,12 @@
 .button {
-  margin: auto;
   background: $main-color;
   color: #ffffff;
-}
-
-.button {
   min-width: 240px;
   height: 58px;
 }
 
 @media (min-width: $tablet-width) {
   .button {
-    margin: 0;
-    width: 355px;
+    min-width: 330px;
   }
 }

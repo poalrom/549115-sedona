@@ -2,18 +2,37 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after { box-sizing: inherit; }
-
-body {
-  margin: 0 ;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
+
 img {
-  max-width: 100% ;
+  max-width: 100%;
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
 }
 
+body {
+  margin: 0;
+  min-width: 320px;
+  text-align: center;
 
+  @include font-main;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
+}

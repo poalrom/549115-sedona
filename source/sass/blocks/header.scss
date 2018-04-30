@@ -7,7 +7,12 @@
 }
 
 .header__logo {
-  margin: auto;
+  position: relative;
+  display: inline-block;
+  width: 101px;
+  height: 84px;
+  background-image: url("../img/logo-sedona-mobile.svg");
+  z-index: 3;
 }
 
 .header__nav-toggle {
@@ -16,11 +21,11 @@
   right: 0;
   font-size: 0;
 
-  &--open {
+  &__open {
     vertical-align: middle;
   }
 
-  &--close {
+  &__close {
     top: 0;
   }
 }

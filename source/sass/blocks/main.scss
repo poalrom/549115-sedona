@@ -6,6 +6,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  flex-direction: row;
-  flex-wrap: wrap;
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
 }

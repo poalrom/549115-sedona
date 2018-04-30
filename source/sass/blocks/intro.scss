@@ -1,11 +1,14 @@
 .intro {
+  position: relative;
+  margin-bottom: 20px;
   min-width: 320px;
-  min-height: 320px;
+  min-height: 350px;
   font-size: 0;
-  background: $main-color url("../img/text-sedona-index.svg") center/90% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/200% no-repeat;
+  background: url("../img/text-sedona-index.svg") center/90% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/220% no-repeat, $main-color;
 
   &--sub {
     min-height: 160px;
+    margin: auto;
     background: url("../img/text-sedona.svg") center/75% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
   }
 }
@@ -18,7 +21,7 @@
 
     &--sub {
       min-height: 293px;
-      background: url("../img/text-sedona.svg") center/65% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
+      background: url("../img/text-sedona.svg") center/60% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
     }
   }
 }
@@ -27,5 +30,12 @@
   .intro {
     min-width: $desktop-width;
     min-height: 520px;
+    margin: 0;
+
+    &--sub {
+      margin-bottom: 60px;
+      min-height: 293px;
+      background: url("../img/text-sedona.svg") center/60% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
+    }
   }
 }

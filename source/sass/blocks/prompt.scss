@@ -6,12 +6,21 @@
 }
 
 @media (min-width: $tablet-width) {
-  .prompt{
+  .prompt {
+    padding: 40px 0;
     width: 648px;
-    min-height: 316px;
   }
 
-  .prompt__title{
+  .prompt__title {
     font-size: 30px;
+  }
+
+  .prompt__guide {
+    margin: 10px 30px 40px;
+  }
+
+  .prompt__request {
+    margin: 0 auto;
+    width: 459px;
   }
 }

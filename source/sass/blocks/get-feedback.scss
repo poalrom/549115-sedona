@@ -26,17 +26,45 @@
     }
 
     &__visit {
-      //display: flex;
-      //flex-wrap: wrap;
       min-width: 648px;
       margin-bottom: 60px;
+
+      &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
     }
 
     &__feedback {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .get-feedback {
+    &__impression {
+      display: flex;
+      flex-direction: column;
+      width: 480px;
+      padding-right: 80px;
+    }
+
+    &__name {
+      width: 480px;
+      padding-left: 80px;
+    }
+
+    &__contact {
+      margin: 40px 0;
+
+      &-wrap {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }
