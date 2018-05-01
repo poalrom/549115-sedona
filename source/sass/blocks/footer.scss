@@ -1,0 +1,20 @@
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  // .footer {
+  //   margin-top: 50px;
+  // }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}

@@ -11,12 +11,17 @@
 
 .form__label {
   display: block;
+
+  &__text {
+    display: inline-block;
+  }
 }
 
 .form__input {
   box-sizing: border-box;
   margin: 10px 0;
   height: 59px;
+  width: 100%;
   background: $input-color;
   border: none;
   padding: 15px;
@@ -28,16 +33,6 @@
   &--size-m {
     min-width: 229px;
   }
-
-  // &--radio {
-  //   width: 59px;
-  // }
-
-  // &--checkbox {
-  //   display: block;
-  //   width: 59px;
-  //   border: none;
-  // }
 
   &--comment {
     width: 90%;
@@ -54,4 +49,102 @@
   height: 59px;
   width: 59px;
   border: none;
+}
+
+.form__endnote {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 678px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .form__title {
+    margin: 0 0 50px 0;
+    flex-grow: 1;
+
+    &--left {
+      text-align: left;
+    }
+  }
+
+  .form__label {
+    min-width: 230px;
+  }
+
+  .form__input {
+    &--size-s {
+      width: 179px;
+    }
+
+    &--size-m {
+      width: 216px;
+    }
+
+    &--tablet {
+      width: 100%;
+    }
+
+    &--comment {
+      width: 100%;
+      height: 159px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .form__endnote {
+    display: inline-block;
+    color: $font-color--input;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .form__label {
+    vertical-align: middle;
+  }
+
+  .form__input {
+    min-width: 320px;
+
+    &--size-s {
+      width: 312px;
+    }
+
+    &--size-m {
+      width: 352px;
+    }
+
+    &--tablet {
+      width: 100%;
+    }
+
+    &--comment {
+      width: 100%;
+      height: 159px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .form__title {
+    margin: 20px 0;
+
+    &::before {
+      content: "";
+    }
+
+    &::after {
+      content: "";
+    }
+  }
 }

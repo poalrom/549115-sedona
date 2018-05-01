@@ -1,3 +1,26 @@
 .prompt {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   padding: 20px 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .prompt {
+    padding: 40px 0;
+    width: 648px;
+  }
+
+  .prompt__title {
+    font-size: 30px;
+  }
+
+  .prompt__guide {
+    margin: 10px 30px 40px;
+  }
+
+  .prompt__request {
+    margin: 0 auto;
+    width: 459px;
+  }
 }

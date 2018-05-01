@@ -1,13 +1,55 @@
 .nav {
-  //display: hidden;
   background-color: $main-color;
-  margin: 0 auto;
 }
 
 .nav__list {
-  @include list-style-none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__item {
+  height: $menu-item-height;
+  line-height: $menu-item-height;
+
+
+  &--logo {
+    background: #ffffff;
+  }
 }
 
 .nav__link {
   text-decoration: none;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    background: #ffffff;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav__item {
+    min-width: 150px;
+
+    &--pos1 {
+      order: -3;
+    }
+
+    &--pos2 {
+      order: -2;
+    }
+
+    &--logo {
+      order: -1;
+      position: static;
+    }
+  }
+
+  .nav__link {
+    color: black;
+  }
 }

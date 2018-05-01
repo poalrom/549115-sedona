@@ -1,11 +1,42 @@
 .intro {
+  position: relative;
+  margin-bottom: 20px;
   min-width: 320px;
-  min-height: 320px;
+  min-height: 350px;
   font-size: 0;
-  background: url("../img/text-sedona-index.svg") center/90% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/270% no-repeat;
+  background: url("../img/text-sedona-index.svg") center/90% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/220% no-repeat, $main-color;
 
   &--sub {
     min-height: 160px;
-    background: url("../img/text-sedona.svg") center/80% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/200% no-repeat;
+    width: 100%;
+    margin: auto;
+    background: url("../img/text-sedona.svg") center/75% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-width: $tablet-width;
+    min-height: 483px;
+    background: url("../img/text-sedona-index.svg") center no-repeat, url("../img/bg-back-mobile@1x.jpg") center/200% no-repeat;
+
+    &--sub {
+      min-height: 293px;
+      background: url("../img/text-sedona.svg") center/60% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    min-width: $desktop-width;
+    min-height: 520px;
+    margin: 0;
+
+    &--sub {
+      margin-bottom: 60px;
+      min-height: 307px;
+      background: url("../img/text-sedona.svg") center/45% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/100% no-repeat;
+    }
   }
 }

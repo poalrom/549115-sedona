@@ -1,14 +1,4 @@
-@mixin before-icon {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 100px;
-  min-width: 80px;
-  min-height: 80px;
-}
-
 .service {
-  @include list-style-none;
   position: relative;
   text-align: left;
   padding-left: 20%;
@@ -17,4 +7,41 @@
 .service__svg {
   position: absolute;
   left: 5%;
+}
+
+@media (min-width: $tablet-width) {
+  .service {
+    display: flex;
+    padding: 0;
+  }
+
+  .service__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 45px 30px 20px 30px;
+    min-width: 256px;
+    height: 330px;
+
+    &--pos1 {
+      order: 1;
+    }
+  }
+
+  .service__svg {
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .service__text {
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service__item {
+    padding: 45px 60px;
+  }
 }
