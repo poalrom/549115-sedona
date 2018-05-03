@@ -76,15 +76,17 @@
       <form class="get-feedback form__border-top" action="https://echo.htmlacademy.ru" method="POST">
         <div class="get-feedback__name get-feedback__item">
           <h2 class="form__title form__title--left font-title">Представьтесь:</h2>
-          <label class="form__label form__label--thin" for="name"><span class="form__label__text">Имя<sup>*</sup>:</span>
-            <input class="form__input form__input--size-m font-input" name="name" type="text" id="name" placeholder="Пётр">
-          </label>
-          <label class="form__label form__label--thin" for="surname"><span class="form__label-text">Фамилия<sup>*</sup>:</span>
-            <input class="form__input form__input--size-s font-input" name="sename" type="text" id="surname" placeholder="Иванов">
-          </label>
-          <label class="form__label form__label--thin" for="patronymiс"><span class="form__label__text">Отчество:</span>
-            <input class="form__input form__input--size-s font-input" name="patronymiс" type="text" id="patronymiс"  placeholder="Александорович">
-          </label>
+          <div class="get-feedback__name-wrap">
+            <label class="form__label form__label--thin" for="name"><span class="form__label__text">Имя<sup>*</sup>:</span>
+              <input class="form__input form__input--size-m font-input" name="name" type="text" id="name" placeholder="Пётр">
+            </label>
+            <label class="form__label form__label--thin" for="surname"><span class="form__label-text">Фамилия<sup>*</sup>:</span>
+              <input class="form__input form__input--size-s font-input" name="sename" type="text" id="surname" placeholder="Иванов">
+            </label>
+            <label class="form__label form__label--thin" for="patronymiс"><span class="form__label__text">Отчество:</span>
+              <input class="form__input form__input--size-s font-input" name="patronymiс" type="text" id="patronymiс"  placeholder="Александорович">
+            </label>
+          </div>
         </div>
         <div class="get-feedback__contact get-feedback__item form__border-top">
           <h2 class="form__title font-title">Контактная информация:</h2>
@@ -101,37 +103,39 @@
         </div>
         <div class="get-feedback__impression get-feedback__item form__border-top">
           <h2 class="form__title font-title">Ваше общее впечатление:</h2>
-          <label class="form__label font-input" for="good">
-            <input class="form__radio" name="impression" type="radio" value="impression-good" id="good" checked>
-            <span class="form__label__radio-text">Скорее положительное</span>
-          </label>
-          <label class="form__label font-input" for="bad">
-            <input class="form__radio" name="impression" type="radio" value="impression-bad" id="bad">
-            <span class="form__label__radio-text">Скорее отрицательное</span>
-          </label>
-          <label class="form__label font-input" for="neutral">
-            <input class="form__radio" type="radio" id="neutral" value="impression-neutral" name="impression">
-            <span class="form__label__radio-text">Затрудняюсь ответить</span>
-          </label>
+          <div class="get-feedback__impression-wrap">
+            <label class="form__label font-input" for="good">
+              <input class="form__radio" name="impression" type="radio" value="impression-good" id="good" checked>
+              <span class="form__label__radio-text">Скорее положительное</span>
+            </label>
+            <label class="form__label font-input" for="bad">
+              <input class="form__radio" name="impression" type="radio" value="impression-bad" id="bad">
+              <span class="form__label__radio-text">Скорее отрицательное</span>
+            </label>
+            <label class="form__label font-input" for="neutral">
+              <input class="form__radio" type="radio" id="neutral" value="impression-neutral" name="impression">
+              <span class="form__label__radio-text">Затрудняюсь ответить</span>
+            </label>
+          </div>
         </div>
         <div class="get-feedback__visit get-feedback__item">
           <h2 class="form__title font-title form__border-top">Посещенные<br>достопримечательности:</h2>
           <div class="get-feedback__visit-wrap">
             <label class="form__label font-input" for="devil-bridge">
               <input class="form__checkbox" name="visit-devil-bridge" type="checkbox" id="devil-bridge" checked>
-              <span class="form__label__text">Мост Дьявола</span>
+              <span class="form__label__text form__label__checkbox-text">Мост Дьявола</span>
             </label>
             <label class="form__label font-input" for="mountain-bell">
               <input class="form__checkbox" name="get-visit-mountain-bell" type="checkbox" id="mountain-bell">
-              <span class="form__label__text">Гора-Колокол</span>
+              <span class="form__label__text form__label__checkbox-text">Гора-Колокол</span>
             </label>
             <label class="form__label font-input" for="slide-park">
               <input class="form__checkbox" name="visit-slide-park" type="checkbox" id="slide-park">
-              <span class="form__label__text">Слайд-парк</span>
+              <span class="form__label__text form__label__checkbox-text">Слайд-парк</span>
             </label>
             <label class="form__label font-input" for="red-rock">
               <input class="form__checkbox" name="visit-red-rock" type="checkbox" id="red-rock">
-              <span class="form__label__text">Красные скалы</span>
+              <span class="form__label__text form__label__checkbox-text">Красные скалы</span>
             </label>
           </div>
         </div>
