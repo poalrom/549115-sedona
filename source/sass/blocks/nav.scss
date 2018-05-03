@@ -11,9 +11,13 @@
   height: $menu-item-height;
   line-height: $menu-item-height;
 
-
   &--logo {
+    //height: 43px;
     background: #ffffff;
+  }
+
+  &--logo-sub {
+    height: 43px;
   }
 }
 
@@ -33,7 +37,7 @@
   }
 
   .nav__item {
-    min-width: 150px;
+    min-width: 145px;
 
     &--pos1 {
       order: -3;
@@ -51,5 +55,11 @@
 
   .nav__link {
     color: black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__item {
+    min-width: 202px;
   }
 }

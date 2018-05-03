@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 
+  &__name {
+    justify-content: space-between;
+  }
+
   &__feedback {
     display: flex;
     flex-direction: column;
@@ -23,6 +27,7 @@
       order: -1;
       min-width: 324px;
       flex-grow: 1;
+      border-right: 1px solid $lightgray;
     }
 
     &__name {
@@ -58,25 +63,39 @@
 
 @media (min-width: $desktop-width) {
   .get-feedback {
-    &__impression {
+    &__item {
       display: flex;
       flex-direction: column;
+    }
+
+    &__impression {
       width: 480px;
+      height: 330px;
       padding-right: 80px;
     }
 
     &__name {
       width: 480px;
+      height: 330px;
       padding-left: 80px;
+      text-align: justify;
     }
 
     &__contact {
-      margin: 40px 0;
+      width: 100%;
+      height: 180px;
+      margin: 35px 0 33px 0;
 
       &-wrap {
         display: flex;
         justify-content: space-between;
+        margin: 0;
       }
+    }
+
+    &__visit {
+      width: 100%;
+      height: 180px;
     }
   }
 }

@@ -18,7 +18,7 @@
 .header__nav-toggle {
   position: absolute;
   top: $menu-item-height * 4;
-  right: 0;
+  right: -12px;
   font-size: 0;
 
   &__open {
@@ -26,7 +26,7 @@
   }
 
   &__close {
-    top: 0;
+    top: -40%;
   }
 }
 
@@ -34,6 +34,11 @@
   .header {
     min-width: $tablet-width;
     min-height: 348px;
+  }
+
+  .header__logo {
+    width: 102px;
+    background-image: url("../img/logo-sedona-tablet.svg");
   }
 
   .header__nav-toggle {
@@ -45,5 +50,11 @@
   .header {
     width: $desktop-width;
     margin: 0 auto;
+  }
+
+  .header__logo {
+    width: 185px;
+    height: 96px;
+    background-image: url("../img/logo-sedona-desktop.svg");
   }
 }
