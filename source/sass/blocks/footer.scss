@@ -15,6 +15,8 @@
 @media (min-width: $desktop-width) {
   .footer {
     width: $desktop-width;
+    height: 100px;
     margin: 0 auto;
+    padding: 20px 0 0 0;
   }
 }

@@ -18,6 +18,8 @@
 .header__nav-toggle {
   position: absolute;
   top: $menu-item-height * 4;
+  border: none;
+  background: transparent;
   right: -12px;
   font-size: 0;
 

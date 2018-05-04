@@ -8,6 +8,7 @@
 
   &-wrap {
     margin-bottom: 20px;
+    contain: content;
   }
 }
 
@@ -47,7 +48,7 @@
     position: relative;
     margin: 0;
     min-width: 324px;
-    min-height: 348px;
+    height: 348px;
     background-color: $lightgray;
 
     &--big {
@@ -61,7 +62,6 @@
     &-wrap {
       height: 270px;
       margin: 0;
-      contain: content;
     }
 
     &-wrap--big {
@@ -88,8 +88,9 @@
 
   .media__item {
     margin: 0;
+    padding: 0;
     min-width: 400px;
-    min-height: 271px;
+    height: 269px;
 
     &--big {
       width: 100%;

@@ -13,10 +13,31 @@
 
   .prompt__title {
     font-size: 30px;
+    margin: 18px 0;
   }
 
   .prompt__guide {
-    margin: 10px 30px 40px;
+    margin: 10px 30px 45px;
+  }
+
+  .prompt__request {
+    margin: 0 auto;
+    width: 459px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prompt {
+    height: 330px;
+
+    &--sub {
+      padding-top: 52px;
+      height: 245px;
+    }
+  }
+
+  .prompt__guide {
+    margin: 10px 30px 45px;
   }
 
   .prompt__request {

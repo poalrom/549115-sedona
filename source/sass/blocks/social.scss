@@ -36,3 +36,10 @@
     align-items: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    //height: 59px;
+    padding: 0;
+  }
+}

@@ -5,7 +5,7 @@
   padding: 0 30px;
 
   &--sub {
-    height: 155px;
+    height: 175px;
     padding: 10px 25px;
   }
 
@@ -19,10 +19,6 @@
   margin-top: 25px;
 }
 
-.description__br {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .description {
     width: 702px;
@@ -34,10 +30,6 @@
       height: 235px;
       padding-top: 44px;
     }
-  }
-
-  .description__br {
-    display: inline;
   }
 }
 

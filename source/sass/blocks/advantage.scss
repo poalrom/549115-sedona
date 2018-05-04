@@ -2,9 +2,14 @@
   background: $main-color;
   color: #ffffff;
   padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .advantage__text {
+  margin: 0 0 20px 0;
+
   &--num {
     &::before {
       content: "\2014";
@@ -37,6 +42,10 @@
 .advantage--secondary {
   background: $lightgray;
   color: black;
+}
+
+.advantage__title {
+  margin: 0 0 20px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,13 +85,11 @@
     flex-grow: 1;
 
     &-1 {
-      background: url("../img/main-city-mobile@1x.jpg") center/100% no-repeat;
-      background-clip: border-box;
+      background: url("../img/main-city-tablex@1x.jpg") center/100% no-repeat;
     }
 
     &-2 {
-      background: url("../img/main-bridge-mobile@1x.jpg") center/100% no-repeat;
-      background-clip: border-box;
+      background: url("../img/main-bridge-tablex@1x.jpg") center/100% no-repeat;
     }
   }
 }
@@ -91,10 +98,29 @@
   .advantage {
     width: 400px;
     height: 256px;
-    padding: 28px 48px;
+    padding: 40px;
   }
 
   .advantage__title {
+    margin: 11px 0;
     padding: 0 80px;
+  }
+
+  .advantage--secondary {
+    flex-grow: 1;
+  }
+
+  .advantage--bg {
+    min-width: 511px;
+    height: 256px;
+    flex-grow: 1;
+
+    &-1 {
+      background: url("../img/main-city-desktop@1x.jpg") center/100% no-repeat;
+    }
+
+    &-2 {
+      background: url("../img/main-bridge-desktop@1x.jpg") center/100% no-repeat;
+    }
   }
 }

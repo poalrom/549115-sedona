@@ -42,6 +42,12 @@
 
 @media (min-width: $desktop-width) {
   .service__item {
-    padding: 45px 60px;
+    padding: 62px;
+  }
+
+  .service__svg {
+    width: 100px;
+    height: 100px;
+    left: -5px;
   }
 }
