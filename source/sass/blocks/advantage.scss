@@ -85,11 +85,23 @@
     flex-grow: 1;
 
     &-1 {
-      background: url("../img/main-city-tablex@1x.jpg") center/100% no-repeat;
+      background: url("../img/main-city-tablet@1x.jpg") center/100% no-repeat;
     }
 
     &-2 {
-      background: url("../img/main-bridge-tablex@1x.jpg") center/100% no-repeat;
+      background: url("../img/main-bridge-tablet@1x.jpg") center/100% no-repeat;
+    }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .advantage--bg {
+      &-1 {
+        background: url("../img/main-city-tablet@2x.jpg") center/100% no-repeat;
+      }
+
+      &-2 {
+        background: url("../img/main-bridge-tablet@2x.jpg") center/100% no-repeat;
+      }
     }
   }
 }
@@ -124,3 +136,5 @@
     }
   }
 }
+
+

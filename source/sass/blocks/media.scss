@@ -1,15 +1,28 @@
 .media__item {
-  margin: 20px;
+  margin: 0 0 21px 0;
+  height: 393px;
+  padding: 0 20px;
   text-align: left;
+  border-bottom: 1px solid $lightgray;
 }
 
 .media__photo {
   width: 100%;
 
   &-wrap {
+    margin: 0;
+    height: 280px;
     margin-bottom: 20px;
     contain: content;
+
+    &--big {
+      margin: 0;
+    }
   }
+}
+
+.media__description {
+  margin-top: 18px;
 }
 
 .media__title {
