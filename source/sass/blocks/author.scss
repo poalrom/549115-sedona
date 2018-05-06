@@ -9,3 +9,15 @@
   right: 0;
   bottom: -12px;
 }
+
+@media (min-width: $tablet-width) {
+  .author {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author {
+    margin-top: 10px;
+  }
+}

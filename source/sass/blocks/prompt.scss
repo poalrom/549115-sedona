@@ -10,15 +10,18 @@
   .prompt {
     padding: 40px 0;
     width: 648px;
+    height: 295px;
   }
 
   .prompt__title {
     font-size: 30px;
-    margin: 18px 0;
+    margin: 8px 0;
   }
 
-  .prompt__guide {
-    margin: 10px 30px 45px;
+  .prompt__text {
+    margin: 20px 0 40px 0;
+    padding: 0 80px;
+    line-height: 24px;
   }
 
   .prompt__request {
@@ -29,6 +32,7 @@
 
 @media (min-width: $desktop-width) {
   .prompt {
+    margin: 0 auto;
     height: 330px;
 
     &--sub {
@@ -37,8 +41,9 @@
     }
   }
 
-  .prompt__guide {
-    margin: 10px 30px 45px;
+  .prompt__text {
+    margin: 11px 0 50px 0;
+    padding: 0 110px;
   }
 
   .prompt__request {

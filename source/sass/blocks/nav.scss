@@ -10,9 +10,10 @@
 .nav__item {
   height: $menu-item-height;
   line-height: $menu-item-height;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
 
   &--logo {
-    //height: 43px;
+    box-shadow: 0 0 8px #666666;
     background: #ffffff;
   }
 
@@ -38,6 +39,7 @@
 
   .nav__item {
     min-width: 145px;
+    border-bottom: none;
 
     &--pos1 {
       order: -3;
@@ -50,6 +52,7 @@
     &--logo {
       order: -1;
       position: static;
+      box-shadow: none;
     }
   }
 

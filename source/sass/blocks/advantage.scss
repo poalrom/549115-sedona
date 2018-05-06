@@ -1,14 +1,19 @@
 .advantage {
+  height: 190px;
   background: $main-color;
   color: #ffffff;
-  padding: 10px 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
+.advantage__title {
+  margin: 0 0 9px 0;
+}
+
 .advantage__text {
-  margin: 0 0 20px 0;
+  margin: 0 0 14px 0;
 
   &--num {
     &::before {
@@ -26,7 +31,7 @@
 .advantage--bg {
   padding: 0;
   min-width: 320px;
-  min-height: 256px;
+  height: 260px;
 
   &-1 {
     background: #d5806d url("../img/main-city-mobile@1x.jpg") center/100% no-repeat;
@@ -44,15 +49,11 @@
   color: black;
 }
 
-.advantage__title {
-  margin: 0 0 20px 0;
-}
-
 @media (min-width: $tablet-width) {
   .advantage {
     width: 256px;
     height: 256px;
-    padding: 28px 48px;
+    padding: 45px;
 
     &--pos1 {
       order: 2;
@@ -73,6 +74,14 @@
     &--pos5 {
       order: 5;
     }
+  }
+
+  .advantage__text {
+    margin: 0 0 20px 0;
+  }
+
+  .advantage__title {
+    margin: 0 0 10px 0;
   }
 
   .advantage--secondary {
@@ -114,12 +123,13 @@
   }
 
   .advantage__title {
-    margin: 11px 0;
+    margin: 13px 0 10px 0;
     padding: 0 80px;
   }
 
   .advantage--secondary {
     flex-grow: 1;
+    padding: 35px 50px;
   }
 
   .advantage--bg {
@@ -134,6 +144,10 @@
     &-2 {
       background: url("../img/main-bridge-desktop@1x.jpg") center/100% no-repeat;
     }
+  }
+
+  .advantage__text {
+    margin: 0 0 20px 0;
   }
 }
 

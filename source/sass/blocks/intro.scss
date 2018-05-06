@@ -1,7 +1,7 @@
 .intro {
   position: relative;
   margin-bottom: 20px;
-  min-width: 320px;
+  min-width: 319px;
   min-height: 389px;
   font-size: 0;
   background: url("../img/bg-intro-triangle-mobile.svg") center/110% no-repeat, url("../img/text-sedona-index.svg")  center/88% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/240% no-repeat, $main-color;
@@ -30,7 +30,7 @@
     }
   }
 
-  @media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
     .intro {
       background: url("../img/bg-intro-triangle-tablet.svg") center/100% no-repeat, url("../img/text-sedona-index.svg") center no-repeat, url("../img/bg-back-tablet@2x.jpg") center/100% no-repeat;
       background-position-y: bottom, 45%, 20%;
@@ -59,7 +59,7 @@
     }
   }
 
-  @media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
     .intro {
       background: url("../img/bg-intro-triangle-desktop.svg") center/100% no-repeat, url("../img/text-sedona-index.svg") center no-repeat, url('../img/bg-back-desktop@2x.jpg') center/100% no-repeat;
       background-position-y: bottom, 46%, 10%;
