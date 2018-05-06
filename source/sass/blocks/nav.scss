@@ -1,5 +1,6 @@
 .nav {
   background-color: $main-color;
+  position: relative;
 }
 
 .nav__list {
@@ -28,9 +29,50 @@
   color: #ffffff;
 }
 
+.nav__toggle {
+  position: absolute;
+  top: $menu-item-height * 4;
+  border: none;
+  background: transparent;
+  right: 0;
+  font-size: 0;
+  top:0;
+}
+
+.nav__toggle-button--open{
+  display: block;
+}
+
+.nav__toggle-button--close{
+  display: none;
+}
+
+.nav--closed{
+
+  .nav__item{
+    display: none;
+  }
+  
+  .nav__item--logo{
+    display: block;
+  }
+
+  .nav__toggle-button--open{
+    display: none;
+  }
+
+  .nav__toggle-button--close{
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .nav {
     background: #ffffff;
+  }
+
+  .nav__toggle {
+    display: none;
   }
 
   .nav__list {
