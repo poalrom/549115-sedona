@@ -4,9 +4,14 @@
   min-height: 261px;
 
   &__wrap {
+    margin: 0 auto;
     position: relative;
     min-height: 201px;
   }
+}
+
+.videoplayer__picture-none {
+  height: 0px;
 }
 
 .videoplayer__controls {
@@ -16,10 +21,10 @@
 
   &--wrap {
     position: absolute;
-    bottom: -58px;
     display: flex;
     flex-direction: column;
-    left: 5%;
+    left: 6%;
+    bottom: -60px;
     width: 87%;
     height: 111px;
     background: transparent;
@@ -33,19 +38,19 @@
 
 .videoplayer__controls__replay {
   position: absolute;
-  top: 40%;
+  top: 36%;
   left: 7%;
 }
 
 .videoplayer__controls__sub {
   position: absolute;
-  top: 40%;
-  right: 22%;
+  top: 36%;
+  right: 24%;
 }
 
 .videoplayer__controls__fullscreen {
   position: absolute;
-  top: 40%;
+  top: 36%;
   right: 5%;
 }
 
@@ -59,7 +64,7 @@
 .progress__value {
   position: absolute;
   top: 42%;
-  left: 25%;
+  left: 22%;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -80,8 +85,57 @@
 
 @media (min-width: $tablet-width) {
   .videoplayer {
-    width: 600px;
-    min-height: 500px;
+    width: 100%;
+    min-height: 455px;
+    margin: 0 0 35px 0;
+
+    &__wrap {
+      width: 650px;
+      min-height: 451px;
+    }
+  }
+
+  .videoplayer__controls {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 2;
+
+    &--wrap {
+      bottom: 4px;
+      left: 0;
+      width: 100%;
+      height: 95px;
+    }
+  }
+
+  .videoplayer__controls__replay {
+    left: 4%;
+    fill: $input-color;
+  }
+
+  .videoplayer__controls__sub {
+    right: 13%;
+    fill: $input-color;
+  }
+
+  .videoplayer__controls__fullscreen {
+    right: 4%;
+    fill: $input-color;
+  }
+
+  .videoplayer__progress {
+    height: 100%;
+  }
+
+  .progress__bar {
+    top: 47%;
+  }
+
+  .progress__value {
+    left: 32%;
+    top: 44%;
   }
 }
 

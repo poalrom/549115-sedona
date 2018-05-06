@@ -1,9 +1,18 @@
 .media__item {
   margin: 0 0 21px 0;
-  height: 393px;
-  padding: 0 20px;
+  height: 394px;
+  padding: 21px;
+  padding-bottom: 0;
   text-align: left;
-  border-bottom: 1px solid $lightgray;
+  border-top: 1px solid $lightgray;
+
+  &--big {
+    border-top: 1px solid $lightgray;
+  }
+}
+
+.media__icon-none {
+  display: none;
 }
 
 .media__photo {
@@ -11,7 +20,7 @@
 
   &-wrap {
     margin: 0;
-    height: 280px;
+    height: 281px;
     margin-bottom: 20px;
     contain: content;
 
@@ -22,6 +31,10 @@
 }
 
 .media__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 77px;
   margin-top: 18px;
 }
 
@@ -32,7 +45,7 @@
 
 .media__author {
   text-transform: none;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .media__like {
@@ -60,6 +73,7 @@
   .media__item {
     position: relative;
     margin: 0;
+    padding: 0;
     min-width: 324px;
     height: 348px;
     background-color: $lightgray;
@@ -83,6 +97,7 @@
   }
 
   .media__description {
+    margin: 0;
     padding: 18px 20px;
   }
 

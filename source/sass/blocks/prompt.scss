@@ -4,6 +4,11 @@
   margin: 11px auto;
   padding: 0 20px;
   height: 160px;
+
+  &--sub {
+    height: 182px;
+    padding: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -11,6 +16,11 @@
     padding: 40px 0;
     width: 648px;
     height: 295px;
+
+    &--sub {
+      height: 222px;
+      padding: 50px 0;
+    }
   }
 
   .prompt__title {

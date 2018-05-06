@@ -8,9 +8,9 @@
   background-position-y: bottom, 51%, center;
 
   &--sub {
-    min-height: 155px;
+    min-height: 160px;
     width: 100%;
-    margin: auto;
+    margin-bottom: 0;
     background: url("../img/bg-intro-triangle-mobile.svg") center/110% no-repeat, url("../img/text-sedona.svg") center/73% no-repeat, url("../img/bg-back-mobile@1x.jpg") center/240% no-repeat;
     background-position-y: bottom, 43%, bottom;
   }
