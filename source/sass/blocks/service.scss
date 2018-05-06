@@ -1,24 +1,16 @@
 .service {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: left;
   height: 418px;
-  padding-left: 23%;
+  padding: 10px 0 50px 70px;
   background-color: #ffffff;
-}
-
-.service__svg {
-  position: absolute;
-  left: 6%;
-  //margin: 20px 0 10px 0;
-}
-
-.service__title {
-  margin: 30px 0 5px 0;
 }
 
 .service__item {
   position: relative;
+  height: 130px;
 
   &--food {
     &::before {
@@ -27,8 +19,8 @@
       height: 40px;
       display: block;
       position: absolute;
-      left: -60px;
-      top: 20px;
+      left: -50px;
+      top: 30px;
       background: url('../img/icon-burger.svg') no-repeat;
       background-size: contain;
     }
@@ -41,7 +33,7 @@
       height: 40px;
       display: block;
       position: absolute;
-      left: -60px;
+      left: -50px;
       top: 20px;
       background: url('../img/icon-house.svg') no-repeat;
       background-size: contain;
@@ -55,7 +47,7 @@
       height: 40px;
       display: block;
       position: absolute;
-      left: -60px;
+      left: -50px;
       top: 20px;
       background: url('../img/icon-gift.svg') no-repeat;
       background-size: contain;
@@ -63,11 +55,21 @@
   }
 }
 
+.service__title {
+  margin: 30px 0 0 0;
+}
+
+.service__text {
+  margin: 10px 0 0 0;
+  padding-right: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .service {
     display: flex;
     flex-direction: row;
     padding: 0;
+    height: 330px;
   }
 
   .service__item {
@@ -75,25 +77,49 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 50px 30px;
+    padding: 150px 40px 0 40px;
     min-width: 256px;
     height: 330px;
 
     &--pos1 {
       order: 1;
     }
+
+    &--food {
+      &::before {
+        width: 80px;
+        height: 80px;
+        left: 85px;
+        top: 60px;
+      }
+    }
+
+    &--house {
+      &::before {
+        width: 80px;
+        height: 85px;
+        left: 90px;
+        top: 59px;
+      }
+    }
+
+    &--souvenir {
+      &::before {
+        width: 80px;
+        height: 80px;
+        left: 92px;
+        top: 56px;
+      }
+    }
   }
 
-  .service__svg {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    left: 0;
-    margin: 0 0 10px 0;
+  .service__title {
+    margin: 10px 0 10px 0;
   }
 
   .service__text {
     text-align: center;
+    padding-right: 0;
   }
 }
 
@@ -101,16 +127,41 @@
   .service__item {
     height: 331px;
     width: 400px;
-    padding: 55px;
-  }
+    padding: 135px 40px 0 40px;
 
-  .service__svg {
-    width: 80px;
-    height: 80px;
-    margin: 0;
+    &--food {
+      &::before {
+        width: 80px;
+        height: 80px;
+        left: 160px;
+        top: 62px;
+      }
+    }
+
+    &--house {
+      &::before {
+        width: 80px;
+        height: 85px;
+        left: 160px;
+        top: 60px;
+      }
+    }
+
+    &--souvenir {
+      &::before {
+        width: 80px;
+        height: 80px;
+        left: 170px;
+        top: 56px;
+      }
+    }
   }
 
   .service__title {
-    margin: 25px 0 5px 0;
+    margin: 25px 0 10px 0;
+  }
+
+  .service__text {
+    padding: 0 15px;
   }
 }
